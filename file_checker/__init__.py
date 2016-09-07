@@ -39,7 +39,7 @@ def printPath(level, path):
             printPath((int(dirList[0]) + 1), path + '/' + dl)
     for fl in fileList:
         # 打印文件
-        print ('-' * (int(dirList[0])), fl)
+        print (path, '-' * (int(dirList[0])), fl)
         # 随便计算一下有多少个文件
         allFileNum = allFileNum + 1
 
